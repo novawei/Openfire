@@ -3836,3 +3836,660 @@ java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Ty
 	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
 	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
 	at java.lang.Thread.run(Unknown Source)
+2017.08.11 17:24:51 WARN  [HouseKeeper]: org.logicalcobwebs.proxool.openfire - #0001 was active for 917387 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.11 17:24:51 WARN  [HouseKeeper]: org.logicalcobwebs.proxool.openfire - #0005 was active for 917408 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.11 18:44:08 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:44:09 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:44:09 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:44:10 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:44:10 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:45:01 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:45:02 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:45:03 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.openfire.pubsub.PubSubModule - Publish-Subscribe domain: pubsub.10.50.200.45
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Multi User Chat domain: conference.10.50.200.45
+2017.08.11 18:45:03 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Openfire 4.1.5 [Aug 11, 2017 6:45:03 PM]
+2017.08.11 18:45:04 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:45:04 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2017.08.11 18:45:04 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2017.08.11 18:45:04 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console listening at:
+  http://10.50.200.45:9090
+  https://10.50.200.45:9091
+2017.08.11 18:45:04 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'admin'.
+2017.08.11 18:45:05 INFO  [pool-4-thread-3]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'mucextend'.
+2017.08.11 18:45:05 INFO  [pool-4-thread-2]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'msghistory'.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginMonitor - Finished processing all plugins.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s-legacyMode] - Started.
+2017.08.11 18:45:05 WARN  [pool-3-thread-1]: org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_s2s] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component-legacyMode] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager-legacyMode] - Started.
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - Installed response compression filter
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpSessionManager - Starting instance
+2017.08.11 18:45:05 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - HTTP bind service started
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'ANONYMOUS' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'PLAIN' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'DIGEST-MD5' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'CRAM-MD5' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'SCRAM-SHA-1' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'JIVE-SHAREDSECRET' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'GSSAPI' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'EXTERNAL' SASL mechanism.
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2017.08.11 18:45:10 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2017.08.11 18:45:15 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:45:15 ERROR [socket_c2s-thread-3]: org.jivesoftware.openfire.handler.IQHandler - Internal server error
+java.lang.NullPointerException
+	at com.nfs.mucextend.MUCExtendRoomIQHandler.handleIQ(MUCExtendRoomIQHandler.java:35)
+	at org.jivesoftware.openfire.handler.IQHandler.process(IQHandler.java:66)
+	at org.jivesoftware.openfire.IQRouter.handle(IQRouter.java:372)
+	at org.jivesoftware.openfire.IQRouter.route(IQRouter.java:115)
+	at org.jivesoftware.openfire.spi.PacketRouterImpl.route(PacketRouterImpl.java:78)
+	at org.jivesoftware.openfire.net.StanzaHandler.processIQ(StanzaHandler.java:341)
+	at org.jivesoftware.openfire.net.ClientStanzaHandler.processIQ(ClientStanzaHandler.java:99)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:306)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:45:18 WARN  [Jetty-QTP-AdminConsole-31]: index.jsp - Failed to fetch RSS feed:
+org.apache.commons.httpclient.ConnectTimeoutException: The host did not accept the connection within timeout of 3000 ms
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:155)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:130)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.jivesoftware.util.HttpClientWithTimeoutFeedFetcher.retrieveFeed(HttpClientWithTimeoutFeedFetcher.java:170)
+	at org.jivesoftware.openfire.admin.index_jsp._jspService(index_jsp.java:387)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:53)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:226)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:165)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:140)
+	... 42 more
+2017.08.11 18:46:46 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:46:46 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:46:47 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.openfire.pubsub.PubSubModule - Publish-Subscribe domain: pubsub.10.50.200.45
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Multi User Chat domain: conference.10.50.200.45
+2017.08.11 18:46:47 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Openfire 4.1.5 [Aug 11, 2017 6:46:47 PM]
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console listening at:
+  http://10.50.200.45:9090
+  https://10.50.200.45:9091
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'admin'.
+2017.08.11 18:46:48 INFO  [pool-4-thread-3]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'mucextend'.
+2017.08.11 18:46:48 INFO  [pool-4-thread-2]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'msghistory'.
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginMonitor - Finished processing all plugins.
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s] - Started.
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s-legacyMode] - Started.
+2017.08.11 18:46:48 WARN  [pool-3-thread-1]: org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.11 18:46:48 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_s2s] - Started.
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component] - Started.
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component-legacyMode] - Started.
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager] - Started.
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager-legacyMode] - Started.
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - Installed response compression filter
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpSessionManager - Starting instance
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'ANONYMOUS' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'PLAIN' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'DIGEST-MD5' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'CRAM-MD5' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'SCRAM-SHA-1' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'JIVE-SHAREDSECRET' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'GSSAPI' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'EXTERNAL' SASL mechanism.
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2017.08.11 18:46:49 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2017.08.11 18:46:49 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - HTTP bind service started
+2017.08.11 18:46:58 WARN  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:46:58 INFO  [socket_c2s-thread-2]: com.nfs.mucextend.MUCExtendRoomIQHandler - <iq type="result" id="5FF8F05C-006F-4CEC-BE8B-E7336748009F" to="novawei@10.50.200.45/iOS"><room roomID="1" name="test1" naturalName="测试1" description="这是一个测试房间"/></iq>
+2017.08.11 18:50:05 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:50:05 INFO  [socket_c2s-thread-3]: com.nfs.mucextend.MUCExtendRoomIQHandler - <iq type="result" id="C5722421-1402-40C9-89CB-B3A17796F010" to="admin@10.50.200.45/iOS"><room roomID="1" name="test1" naturalName="测试1" description="这是一个测试房间"/></iq>
+2017.08.11 18:54:21 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:54:21 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:54:22 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.openfire.pubsub.PubSubModule - Publish-Subscribe domain: pubsub.10.50.200.45
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Multi User Chat domain: conference.10.50.200.45
+2017.08.11 18:54:22 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Openfire 4.1.5 [Aug 11, 2017 6:54:22 PM]
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console listening at:
+  http://10.50.200.45:9090
+  https://10.50.200.45:9091
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'admin'.
+2017.08.11 18:54:23 INFO  [pool-4-thread-2]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'msghistory'.
+2017.08.11 18:54:23 INFO  [pool-4-thread-3]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'mucextend'.
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginMonitor - Finished processing all plugins.
+2017.08.11 18:54:23 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s-legacyMode] - Started.
+2017.08.11 18:54:24 WARN  [pool-3-thread-1]: org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_s2s] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component-legacyMode] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager-legacyMode] - Started.
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - Installed response compression filter
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpSessionManager - Starting instance
+2017.08.11 18:54:24 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - HTTP bind service started
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'ANONYMOUS' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'PLAIN' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'DIGEST-MD5' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'CRAM-MD5' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'SCRAM-SHA-1' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'JIVE-SHAREDSECRET' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'GSSAPI' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'EXTERNAL' SASL mechanism.
+2017.08.11 18:54:24 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2017.08.11 18:54:25 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2017.08.11 18:54:25 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2017.08.11 18:54:32 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:55:59 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:55:59 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:56:00 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.openfire.pubsub.PubSubModule - Publish-Subscribe domain: pubsub.10.50.200.45
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Multi User Chat domain: conference.10.50.200.45
+2017.08.11 18:56:00 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Openfire 4.1.5 [Aug 11, 2017 6:56:00 PM]
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console listening at:
+  http://10.50.200.45:9090
+  https://10.50.200.45:9091
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'admin'.
+2017.08.11 18:56:01 INFO  [pool-4-thread-2]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'msghistory'.
+2017.08.11 18:56:01 INFO  [pool-4-thread-3]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'mucextend'.
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginMonitor - Finished processing all plugins.
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s] - Started.
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s-legacyMode] - Started.
+2017.08.11 18:56:01 WARN  [pool-3-thread-1]: org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.11 18:56:01 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_s2s] - Started.
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component] - Started.
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component-legacyMode] - Started.
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager] - Started.
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager-legacyMode] - Started.
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - Installed response compression filter
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpSessionManager - Starting instance
+2017.08.11 18:56:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - HTTP bind service started
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'ANONYMOUS' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'PLAIN' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'DIGEST-MD5' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'CRAM-MD5' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'SCRAM-SHA-1' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'JIVE-SHAREDSECRET' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'GSSAPI' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'EXTERNAL' SASL mechanism.
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2017.08.11 18:56:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2017.08.11 18:56:12 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:58:00 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2017.08.11 18:58:00 INFO  [main]: org.logicalcobwebs.proxool.ProxoolFacade - Proxool 0.9.0RC3+ (February 6 2008)
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2017.08.11 18:58:01 INFO  [main]: org.logicalcobwebs.proxool.openfire - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.openfire.pubsub.PubSubModule - Publish-Subscribe domain: pubsub.10.50.200.45
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Multi User Chat domain: conference.10.50.200.45
+2017.08.11 18:58:01 INFO  [main]: org.jivesoftware.openfire.XMPPServer - Openfire 4.1.5 [Aug 11, 2017 6:58:01 PM]
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console listening at:
+  http://10.50.200.45:9090
+  https://10.50.200.45:9091
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'admin'.
+2017.08.11 18:58:02 INFO  [pool-4-thread-2]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'msghistory'.
+2017.08.11 18:58:02 INFO  [pool-4-thread-3]: org.jivesoftware.openfire.container.PluginManager - Successfully loaded plugin 'mucextend'.
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.container.PluginMonitor - Finished processing all plugins.
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s] - Started.
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_c2s-legacyMode] - Started.
+2017.08.11 18:58:02 WARN  [pool-3-thread-1]: org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.11 18:58:02 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[socket_s2s] - Started.
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component] - Started.
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[component-legacyMode] - Started.
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager] - Started.
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.ConnectionListener[connection_manager-legacyMode] - Started.
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.spi.EncryptionArtifactFactory - Creating new SslContextFactory instance
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - Installed response compression filter
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpSessionManager - Starting instance
+2017.08.11 18:58:03 INFO  [pool-3-thread-1]: org.jivesoftware.openfire.http.HttpBindManager - HTTP bind service started
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'ANONYMOUS' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'PLAIN' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'DIGEST-MD5' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'CRAM-MD5' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'SCRAM-SHA-1' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'JIVE-SHAREDSECRET' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'GSSAPI' SASL mechanism.
+2017.08.11 18:58:11 INFO  [socket_c2s-thread-2]: org.jivesoftware.openfire.net.SASLAuthentication - Support added for the 'EXTERNAL' SASL mechanism.
+2017.08.11 18:58:12 INFO  [socket_c2s-thread-2]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2017.08.11 18:58:12 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.11 18:58:12 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2017.08.11 18:58:12 INFO  [socket_c2s-thread-3]: org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2017.08.11 18:58:29 WARN  [socket_c2s-thread-3]: org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
