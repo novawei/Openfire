@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin>
+    <class>com.nfs.msghistory.MsgHistoryPlugin</class>
+    <name>Message History</name>
+    <description>Save message history to db.</description>
+    <author>Nova</author>
+    <version>1.0.0</version>
+    <date>10/08/2017</date>
+    <minServerVersion>4.1.0</minServerVersion>
+    <databaseKey>msghistory</databaseKey>
+    <databaseVersion>0</databaseVersion>
+    
+    <adminconsole>
+    </adminconsole>
+
+</plugin>
