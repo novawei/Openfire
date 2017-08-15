@@ -8,6 +8,8 @@
     <version>1.0.0</version>
     <date>10/08/2017</date>
     <minServerVersion>4.1.0</minServerVersion>
+    <databaseKey>mucextend</databaseKey>
+    <databaseVersion>0</databaseVersion>
     
     <adminconsole>
     </adminconsole>

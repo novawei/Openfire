@@ -10,15 +10,18 @@ import org.jivesoftware.openfire.muc.MUCEventDispatcher;
 public class MUCExtendPlugin implements Plugin {
 	
 	private MUCExtendEventListener listener;
-	private MUCExtendRoomIQHandler handler;
+	private RoomIQHandler roomHandler;
+	private UserIQHandler userHandler;
 
 	@Override
 	public void initializePlugin(PluginManager manager, File pluginDirectory) {
 		listener = new MUCExtendEventListener();
 		MUCEventDispatcher.addListener(listener);
 		
-		handler = new MUCExtendRoomIQHandler();
-		XMPPServer.getInstance().getIQRouter().addHandler(handler);
+		roomHandler = new RoomIQHandler();
+		XMPPServer.getInstance().getIQRouter().addHandler(roomHandler);
+		userHandler = new UserIQHandler();
+		XMPPServer.getInstance().getIQRouter().addHandler(userHandler);
 	}
 
 	@Override
@@ -26,8 +29,10 @@ public class MUCExtendPlugin implements Plugin {
 		MUCEventDispatcher.removeListener(listener);
 		listener = null;
 		
-		XMPPServer.getInstance().getIQRouter().removeHandler(handler);
-		handler = null;
+		XMPPServer.getInstance().getIQRouter().removeHandler(roomHandler);
+		roomHandler = null;
+		XMPPServer.getInstance().getIQRouter().removeHandler(userHandler);
+		userHandler = null;
 	}
 
 }

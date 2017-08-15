@@ -12,6 +12,7 @@ import org.jivesoftware.openfire.interceptor.PacketInterceptor;
 import org.jivesoftware.openfire.interceptor.PacketRejectedException;
 import org.jivesoftware.openfire.muc.MUCRole;
 import org.jivesoftware.openfire.muc.MUCRoom;
+import org.jivesoftware.openfire.muc.MultiUserChatService;
 import org.jivesoftware.openfire.session.Session;
 import org.jivesoftware.openfire.user.UserManager;
 import org.jivesoftware.openfire.user.UserNotFoundException;
@@ -24,14 +25,22 @@ import org.xmpp.packet.Packet;
 public class MsgHistoryPlugin implements Plugin, PacketInterceptor {
 	private static final Logger Log = LoggerFactory.getLogger(MsgHistoryPlugin.class);
 
+	private MsgHistoryIQHandler handler = null;
+	
 	@Override
 	public void initializePlugin(PluginManager manager, File pluginDirectory) {
 		InterceptorManager.getInstance().addInterceptor(this);
+		
+		handler = new MsgHistoryIQHandler();
+		XMPPServer.getInstance().getIQRouter().addHandler(handler);
 	}
 
 	@Override
 	public void destroyPlugin() {
 		InterceptorManager.getInstance().removeInterceptor(this);
+		
+		XMPPServer.getInstance().getIQRouter().removeHandler(handler);
+		handler = null;
 	}
 
 	@Override
@@ -62,14 +71,17 @@ public class MsgHistoryPlugin implements Plugin, PacketInterceptor {
             }
         	
         	if (msg.getType() == Message.Type.chat) {
-        		Log.debug("processed = " + processed + "    incoming = " + incoming);
-        		Log.debug(msg.toXML());
         		MsgHistoryDao.saveChatMsgToDB(msg);
         	} else if (msg.getType() == Message.Type.groupchat) {
-        		Log.debug("processed = " + processed + "    incoming = " + incoming);
-        		Log.debug(msg.toXML());
-        		String roomName = msg.getFrom().getNode();
-        		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService("conference").getChatRoom(roomName.toLowerCase());
+        		String roomName = msg.getFrom().getNode().toLowerCase();
+        		List<MultiUserChatService> serviceList = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatServices();
+        		MUCRoom mucroom = null;
+        		for (MultiUserChatService service : serviceList) {
+        			mucroom = service.getChatRoom(roomName);
+        			if (mucroom != null) {
+        				break;
+        			}
+        		}
         		if (mucroom != null) {
         			MUCRole senderRole = null;
 					JID senderJID;
@@ -81,7 +93,7 @@ public class MsgHistoryPlugin implements Plugin, PacketInterceptor {
 						try {
 							occupants = mucroom.getOccupantsByNickname(msg.getFrom().getResource().toLowerCase());
 						} catch (UserNotFoundException e) {
-							Log.error("用户不存在" + e.getMessage());
+							Log.error("用户不存在", e);
 						}
 						senderRole = occupants == null ? null : occupants.get(0);
 					}
@@ -94,7 +106,7 @@ public class MsgHistoryPlugin implements Plugin, PacketInterceptor {
 					}
 					MsgHistoryDao.saveGroupChatMsgToDB(mucroom, msg, senderJID);
         		} else {
-        			Log.error("未找到房间" + roomName);
+        			Log.error("未找到房间{}", roomName);
         		}
         	}
         }

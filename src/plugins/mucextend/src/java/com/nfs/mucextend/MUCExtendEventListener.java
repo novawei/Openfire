@@ -1,16 +1,19 @@
 package com.nfs.mucextend;
 
+import java.util.Collection;
+import java.util.List;
+
 import org.dom4j.Element;
+import org.jivesoftware.openfire.RoutingTable;
+import org.jivesoftware.openfire.SessionManager;
 import org.jivesoftware.openfire.XMPPServer;
-import org.jivesoftware.openfire.muc.CannotBeInvitedException;
-import org.jivesoftware.openfire.muc.ConflictException;
-import org.jivesoftware.openfire.muc.ForbiddenException;
 import org.jivesoftware.openfire.muc.MUCEventListener;
+import org.jivesoftware.openfire.muc.MUCRole;
 import org.jivesoftware.openfire.muc.MUCRoom;
-import org.jivesoftware.openfire.muc.NotAllowedException;
+import org.jivesoftware.openfire.session.ClientSession;
+import org.jivesoftware.openfire.user.UserNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
 
@@ -38,28 +41,12 @@ public class MUCExtendEventListener implements MUCEventListener {
 		}
 		long roomID = mucroom.getID();
 		String jid = user.toBareJID();
-		// 用户即可能存在ofmucaffiliation表，也可能存在ofmucmember表
-		if (MUCExtendDao.isAffiliationExist(roomID, jid) || MUCExtendDao.isMemberExist(roomID, jid)) {
+		if (MUCDao.isUserExist(roomID, jid)) {
 			return;
 		}
 		
-		Log.info(roomJID.toString() + " " + user.toString() + " " + nickname);
-		
-		IQ iq = new IQ(IQ.Type.set); 
-		Element frag = iq.setChildElement("query", "http://jabber.org/protocol/muc#admin");
-        Element item = frag.addElement("item");
-        item.addAttribute("affiliation", "member");
-        item.addAttribute("jid", jid);
-		item.addAttribute("nick", nickname);
-        // Send the IQ packet that will modify the room's configuration
-		try {
-			mucroom.getIQAdminHandler().handleIQ(iq, mucroom.getRole());
-		} catch (ForbiddenException 
-				| ConflictException 
-				| NotAllowedException
-				| CannotBeInvitedException e) {
-			Log.error(e.getMessage());
-		}
+		MUCDao.saveUserToDB(roomID, jid, nickname);
+		// TODO 通知组内成员，成员列表变动
 	}
 
 	@Override
@@ -71,15 +58,86 @@ public class MUCExtendEventListener implements MUCEventListener {
 	@Override
 	public void nicknameChanged(JID roomJID, JID user, String oldNickname,
 			String newNickname) {
-		// TODO Auto-generated method stub
-
+		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService(roomJID).getChatRoom(roomJID.getNode());
+		if (mucroom == null) {
+			return;
+		}
+		long roomID = mucroom.getID();
+		String jid = user.toBareJID();
+		
+		MUCDao.updateUserToDB(roomID, jid, newNickname);
+		// TODO 通知组内成员，成员昵称变动
 	}
 
 	@Override
 	public void messageReceived(JID roomJID, JID user, String nickname,
 			Message message) {
-		// TODO Auto-generated method stub
+		if (message.getBody() == null) {
+			return;
+		}
+		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService(roomJID).getChatRoom(roomJID.getNode());
+		if (mucroom == null) {
+			return;
+		}
+		long roomID = mucroom.getID();
+		Collection<MUCRole> occupants = mucroom.getOccupants();
+		for (MUCRole role : occupants) {
+			role.getUserAddress().toBareJID();
+		}
+		// 获取所有的用户，然后给群组成员发送消息
+		List<UserEntity> userList = MUCDao.getUserList(roomID);
+		/**
+		 * <message to="novawei@10.50.200.45/Spark" id="iJ0Vm-713" type="groupchat" from="test1@conference.10.50.200.45/novawei">
+		 * <body>22</body>
+		 * <x xmlns="jabber:x:event"><offline/><delivered/><displayed/><composing/></x>
+		 * </message> 
+		 * 
+		 *<message to='multicast.jabber.org'>
+   		 *	<addresses xmlns='http://jabber.org/protocol/address'>
+       	 *		<address type='to' jid='hildjj@jabber.org/Work' desc='Joe Hildebrand'/>
+       	 *		<address type='cc' jid='jer@jabber.org/Home' desc='Jeremie Miller'/>
+   		 *	</addresses>
+   		 *	<body>Hello, world!</body>
+		 *</message>
+		 */
+		Message messageCopy = message.createCopy();
+		Element element = messageCopy.getElement();
+		element.remove(element.attribute("to"));
+		element.remove(element.element("x"));
 
+		/**
+		 * MulticastRouter和MessageRouter，通过判断条件屏蔽了groupchat类型的广播 
+		 * Element addressesElement = element.addElement("addresses"); 
+		 * Element addressElement = null;
+		 * for (UserEntity entity : userList) {
+		 *     addressElement = addressesElement.addElement("address");
+		 *     addressElement.addAttribute("type", "to");
+		 *     addressElement.addAttribute("jid", entity.getJid()); 
+		 * }
+		 * 
+		 * MulticastRouter router = XMPPServer.getInstance().getMulticastRouter();
+		 * router.route(messageCopy);
+		 */
+		
+		SessionManager sessionManager = XMPPServer.getInstance().getSessionManager();
+		RoutingTable routingTable = XMPPServer.getInstance().getRoutingTable();
+		JID entityJID = null;
+		Message packet = null;
+		for (UserEntity entity : userList) {
+			entityJID = new JID(entity.getJid());
+			if (!canBroadcast(entityJID, user, mucroom)) {
+				continue;
+			}
+			List<JID> routes = routingTable.getRoutes(entityJID, null);
+			for (JID route : routes) {
+				ClientSession clientSession = sessionManager.getSession(route);
+				if (clientSession != null && clientSession.getStatus() == ClientSession.STATUS_AUTHENTICATED) {
+					packet = messageCopy.createCopy();
+					packet.setTo(route);
+					clientSession.process(packet);
+				}
+			}
+		}
 	}
 
 	@Override
@@ -92,6 +150,29 @@ public class MUCExtendEventListener implements MUCEventListener {
 	public void roomSubjectChanged(JID roomJID, JID user, String newSubject) {
 		// TODO Auto-generated method stub
 
+	}
+	
+	/**
+	 * 加入房间的用户,mucroom会自动发送消息到该用户
+	 * 只发送给非本人且不在房间的用户
+	 * @param toJID
+	 * @param fromJID
+	 * @param room
+	 * @return
+	 */
+	private boolean canBroadcast(JID toJID, JID fromJID, MUCRoom room) {
+		if (toJID.compareTo(fromJID.asBareJID()) == 0) {
+			return false;
+		}
+		boolean joined = false;
+		try {
+			List<MUCRole> roles = room.getOccupantsByBareJID(toJID);
+			joined = roles.size() > 0;
+		}
+		catch (UserNotFoundException e) {
+			
+		}
+		return joined == false;
 	}
 
 }

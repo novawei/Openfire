@@ -4906,3 +4906,442 @@ java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Ty
 	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
 	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
 	at java.lang.Thread.run(Unknown Source)
+2017.08.11 19:13:30 org.logicalcobwebs.proxool.openfire - #0002 was active for 918523 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.11 19:13:30 org.logicalcobwebs.proxool.openfire - #0001 was active for 901293 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.11 19:13:30 org.logicalcobwebs.proxool.openfire - #0003 was active for 901293 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.11 19:13:30 org.logicalcobwebs.proxool.openfire - #0005 was active for 918532 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.13 15:48:18 org.apache.commons.httpclient.HttpMethodBase - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2017.08.13 15:48:19 org.apache.commons.httpclient.HttpMethodBase - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2017.08.14 09:37:45 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.14 09:39:07 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.14 09:53:03 org.logicalcobwebs.proxool.openfire - #0015 was active for 918427 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 09:53:03 org.logicalcobwebs.proxool.openfire - #0018 was active for 918447 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 09:53:03 org.logicalcobwebs.proxool.openfire - #0019 was active for 918448 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 09:54:33 org.logicalcobwebs.proxool.openfire - #0016 was active for 925879 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 09:54:33 org.logicalcobwebs.proxool.openfire - #0017 was active for 925880 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 09:54:33 org.logicalcobwebs.proxool.openfire - #0020 was active for 925903 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 11:09:04 org.logicalcobwebs.proxool.openfire - #0023 was active for 906443 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 12:59:40 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 13:12:24 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 13:21:59 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 13:46:40 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 14:04:38 org.logicalcobwebs.proxool.openfire - #0003 was active for 914203 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 14:08:38 org.logicalcobwebs.proxool.openfire - #0002 was active for 901046 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 14:08:38 org.logicalcobwebs.proxool.openfire - #0001 was active for 901046 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 14:37:36 org.jivesoftware.util.cache.CacheFactory - CacheFactory - Unable to find a Plugin that provides clustering support.
+2017.08.14 14:37:36 org.jivesoftware.util.cache.CacheFactory - Clustered cache factory strategy org.jivesoftware.openfire.plugin.util.cache.ClusteredCacheFactory not found
+2017.08.14 16:59:12 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:09:32 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:13:28 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:18:30 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:24:45 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:26:07 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:28:45 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 17:44:12 org.logicalcobwebs.proxool.openfire - #0002 was active for 906114 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:44:12 org.logicalcobwebs.proxool.openfire - #0001 was active for 918962 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:44:12 org.logicalcobwebs.proxool.openfire - #0004 was active for 902783 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:44:42 org.logicalcobwebs.proxool.openfire - #0005 was active for 929060 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0003 was active for 926892 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0006 was active for 917837 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0007 was active for 915753 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0008 was active for 914676 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0009 was active for 914208 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0010 was active for 913477 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:45:42 org.logicalcobwebs.proxool.openfire - #0011 was active for 903839 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 17:47:25 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.14 18:03:20 org.logicalcobwebs.proxool.openfire - #0003 was active for 913058 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:03:20 org.logicalcobwebs.proxool.openfire - #0004 was active for 924606 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:03:50 org.logicalcobwebs.proxool.openfire - #0005 was active for 923794 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:05:50 org.logicalcobwebs.proxool.openfire - #0001 was active for 900891 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:06:20 org.logicalcobwebs.proxool.openfire - #0002 was active for 925989 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:06:20 org.logicalcobwebs.proxool.openfire - #0006 was active for 923583 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:06:20 org.logicalcobwebs.proxool.openfire - #0007 was active for 920739 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.14 18:06:20 org.logicalcobwebs.proxool.openfire - #0008 was active for 904251 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 08:16:15 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 08:23:35 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 08:35:22 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 08:53:15 org.logicalcobwebs.proxool.openfire - #0003 was active for 928510 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 08:55:15 org.logicalcobwebs.proxool.openfire - #0002 was active for 927520 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 08:59:15 org.logicalcobwebs.proxool.openfire - #0004 was active for 916906 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 09:00:38 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 09:16:06 org.logicalcobwebs.proxool.openfire - #0004 was active for 907405 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 09:16:06 org.logicalcobwebs.proxool.openfire - #0005 was active for 903357 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 09:32:06 org.logicalcobwebs.proxool.openfire - #0007 was active for 904448 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 09:58:48 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 10:14:35 org.logicalcobwebs.proxool.openfire - #0001 was active for 927918 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:14:35 org.logicalcobwebs.proxool.openfire - #0002 was active for 913919 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:15:05 org.logicalcobwebs.proxool.openfire - #0003 was active for 926564 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:15:35 org.logicalcobwebs.proxool.openfire - #0005 was active for 917349 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:16:05 org.logicalcobwebs.proxool.openfire - #0004 was active for 925440 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:16:35 org.logicalcobwebs.proxool.openfire - #0006 was active for 925141 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:17:35 org.logicalcobwebs.proxool.openfire - #0007 was active for 926837 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:19:35 org.logicalcobwebs.proxool.openfire - #0008 was active for 912394 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:20:05 org.logicalcobwebs.proxool.openfire - #0009 was active for 910207 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:21:05 org.logicalcobwebs.proxool.openfire - #0010 was active for 904418 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:35:05 org.logicalcobwebs.proxool.openfire - #0013 was active for 907748 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:35:35 org.logicalcobwebs.proxool.openfire - #0012 was active for 913427 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:35:35 org.logicalcobwebs.proxool.openfire - #0014 was active for 921301 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:40:35 org.logicalcobwebs.proxool.openfire - #0011 was active for 919586 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:41:05 org.logicalcobwebs.proxool.openfire - #0015 was active for 904120 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:44:05 org.logicalcobwebs.proxool.openfire - #0016 was active for 911586 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:44:05 org.logicalcobwebs.proxool.openfire - #0017 was active for 903019 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:46:05 org.logicalcobwebs.proxool.openfire - #0018 was active for 929272 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:47:35 org.logicalcobwebs.proxool.openfire - #0019 was active for 908397 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:47:35 org.logicalcobwebs.proxool.openfire - #0020 was active for 908268 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:48:05 org.logicalcobwebs.proxool.openfire - #0021 was active for 920792 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:48:35 org.logicalcobwebs.proxool.openfire - #0022 was active for 925767 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:49:05 org.logicalcobwebs.proxool.openfire - #0023 was active for 929288 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:49:05 org.logicalcobwebs.proxool.openfire - #0024 was active for 913658 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:49:05 org.logicalcobwebs.proxool.openfire - #0025 was active for 909364 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:49:35 org.logicalcobwebs.proxool.openfire - #0026 was active for 914754 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:55:35 org.logicalcobwebs.proxool.openfire - #0027 was active for 927516 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:56:05 org.logicalcobwebs.proxool.openfire - #0028 was active for 907962 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:57:05 org.logicalcobwebs.proxool.openfire - #0029 was active for 913393 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:57:05 org.logicalcobwebs.proxool.openfire - #0030 was active for 906684 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 10:59:35 org.logicalcobwebs.proxool.openfire - #0031 was active for 910510 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:00:35 org.logicalcobwebs.proxool.openfire - #0032 was active for 912819 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:03:35 org.logicalcobwebs.proxool.openfire - #0033 was active for 904075 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:03:35 org.logicalcobwebs.proxool.openfire - #0034 was active for 902090 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:04:05 org.logicalcobwebs.proxool.openfire - #0035 was active for 919575 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:04:05 org.logicalcobwebs.proxool.openfire - #0036 was active for 912946 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:05:05 org.logicalcobwebs.proxool.openfire - #0037 was active for 918191 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:05:35 org.logicalcobwebs.proxool.openfire - #0038 was active for 908847 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:09:05 org.logicalcobwebs.proxool.openfire - #0039 was active for 922692 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:14:06 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 11:15:13 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 11:31:31 org.logicalcobwebs.proxool.openfire - #0002 was active for 909325 milliseconds and has been removed automaticaly. The Thread responsible was named 'httpbind-worker-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 11:35:20 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 11:51:18 org.logicalcobwebs.proxool.openfire - #0003 was active for 924306 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:02:37 org.jivesoftware.openfire.PresenceRouter - Rejected available presence: 
+<presence from="admin@10.50.200.45/strophe" to="test2@conference.10.50.200.45"/> - org.jivesoftware.openfire.http.HttpSession@7adc5d52 status: -1 address: admin@10.50.200.45/strophe id: 2bt5vwfv8p presence: 
+<presence from="admin@10.50.200.45/strophe"/>
+2017.08.15 12:07:38 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 12:08:47 org.jivesoftware.openfire.nio.ConnectionHandler - Closing connection due to exception in session: (0x00000002: nio socket, server, null => 0.0.0.0/0.0.0.0:5222)
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.15 12:16:37 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="79A025C6-2E4D-4CD8-ABA8-C87B940E5564" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:16:37 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="4688FCDB-A34B-4687-A283-9E229922646A" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:16:48 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="D3228ED5-B400-4BDC-A1CE-6E0A817CC75B" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:16:59 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="775B947D-18A7-4ED2-96C5-51DC7647BB19" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:17:10 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="0A488000-8744-407A-A9FB-34B6ECAA3812" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:17:21 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="4EE22C15-D0E4-43F3-8D6E-8B06CB19DC37" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:23:06 org.logicalcobwebs.proxool.openfire - #0001 was active for 908501 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:23:06 org.logicalcobwebs.proxool.openfire - #0002 was active for 914704 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:23:06 org.logicalcobwebs.proxool.openfire - #0004 was active for 909068 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:23:36 org.logicalcobwebs.proxool.openfire - #0005 was active for 909687 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:24:06 org.logicalcobwebs.proxool.openfire - #0003 was active for 923122 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-2', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:24:06 org.logicalcobwebs.proxool.openfire - #0006 was active for 902589 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:24:06 org.logicalcobwebs.proxool.openfire - #0007 was active for 900295 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:24:36 org.logicalcobwebs.proxool.openfire - #0008 was active for 928698 milliseconds and has been removed automaticaly. The Thread responsible was named 'socket_c2s-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2017.08.15 12:25:13 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 12:26:18 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="358C3094-6B47-43BF-AB35-D2E3BDC28F32" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:29:23 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 12:29:44 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="823024F3-02C9-4BA1-B0BF-793B0525A604" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:29:44 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="DACC874E-803D-4508-93DD-F72A840ABE2F" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:29:44 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="96FB69BB-8C81-44E3-BB0F-0C30A044A6B9" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:39:04 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="2EF0312B-E9E3-471A-A87A-8EF58676D791" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:40:01 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="5562386C-9134-43DD-9E01-5FE24A1A5C29" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:44:59 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="82125ACB-9631-4516-B8A2-3D2823778D50" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 12:44:59 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="C136C80B-5BF3-4CAE-8F12-0CB1B25716C0" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:12:18 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.15 13:13:29 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.15 13:14:37 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)
+2017.08.15 13:16:29 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="71936F2F-583D-43E9-8C8D-9662C243B4C3" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:16:30 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="4624DE3E-E477-45D1-B4FB-2F70021ECD7A" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:16:32 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="741F7228-AAF1-4E59-BBAE-0AD420888C76" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:16:34 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="6137445F-B818-49FD-BA76-B170E412C9C0" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:16:34 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="491B1328-3BA0-4542-8815-56296C866D61" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:16:34 org.jivesoftware.openfire.nio.OfflinePacketDeliverer - Could not route packet
+
+<iq type="result" id="FEF3AE03-0489-43AC-BA36-8D9925DEDDAF" to="admin@10.50.200.45/iOS">
+  <bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+    <jid>admin@10.50.200.45/iOS</jid>
+  </bind>
+</iq>
+2017.08.15 13:44:06 org.jivesoftware.openfire.spi.LegacyConnectionAcceptor - Configuration allows for up to 16 threads, although implementation is limited to exactly one.
+2017.08.15 13:44:40 org.jivesoftware.openfire.net.StanzaHandler - Invalid presence type
+java.lang.IllegalArgumentException: No enum constant org.xmpp.packet.Presence.Type.available
+	at java.lang.Enum.valueOf(Unknown Source)
+	at org.xmpp.packet.Presence$Type.valueOf(Presence.java:334)
+	at org.xmpp.packet.Presence.getType(Presence.java:118)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:251)
+	at org.jivesoftware.openfire.net.StanzaHandler.process(StanzaHandler.java:198)
+	at org.jivesoftware.openfire.nio.ConnectionHandler.messageReceived(ConnectionHandler.java:181)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTask(OrderedThreadPoolExecutor.java:769)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.runTasks(OrderedThreadPoolExecutor.java:761)
+	at org.apache.mina.filter.executor.OrderedThreadPoolExecutor$Worker.run(OrderedThreadPoolExecutor.java:703)
+	at java.lang.Thread.run(Unknown Source)

@@ -44,7 +44,7 @@
 	<classpathentry kind="lib" path="build/lib/merge/rome.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/shaj.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/sitemesh.jar"/>
-	<classpathentry kind="lib" path="build/lib/merge/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="build/lib/merge/slf4j-api.jar" sourcepath="C:/Users/Nova/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-sources.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/standard.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/stringprep.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/tinder.jar"/>
