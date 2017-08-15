@@ -15,11 +15,15 @@ public class MUCDao {
 	private static final Logger Log = LoggerFactory.getLogger(MUCDao.class);
 
 	private static final String CHECK_USER_EXIST = "SELECT COUNT(*) FROM ofMucUser WHERE roomID=? AND jid=?";
+	
+	private static final String ADD_USER = "INSERT INTO ofMucUser(roomID, jid, nickname) VALUES(?, ?, ?)";
+	private static final String UPDATE_USER = "UPDATE ofMucUser SET nickname=? WHERE roomID=? AND jid=?";
+	private static final String DELETE_USER = "DELETE FROM ofMucUser WHERE roomID=? AND jid=?";
+	private static final String DELETE_ROOM = "DELETE FROM ofMucUser WHERE roomID=?";
+	
 	private static final String QUERY_ROOM_LIST = "SELECT DISTINCT r.roomID, r.name, r.naturalName, r.description, u.nickname FROM ofMucRoom AS r "
 			+ "INNER JOIN ofMucUser AS u ON r.roomID=u.roomID "
 			+ "WHERE u.jid=?";
-	private static final String ADD_USER = "INSERT INTO ofMucUser(roomID, jid, nickname) VALUES(?, ?, ?)";
-	private static final String UPDATE_USER = "UPDATE ofMucUser SET nickname=? WHERE roomID=? AND jid=?";
 	private static final String QUERY_USER_LIST = "SELECT u.roomID, u.jid, u.nickname, a.affiliation FROM ofMucUser AS u "
 			+ "LEFT JOIN ofmucaffiliation AS a ON a.roomID=u.roomID AND a.jid=u.jid "
 			+ "WHERE u.roomID=?";
@@ -61,6 +65,43 @@ public class MUCDao {
         }
         catch (SQLException sqle) {
             Log.error("Error saving room user", sqle);
+        }
+        finally {
+            DbConnectionManager.closeConnection(pstmt, con);
+        }
+	}
+	
+	public static void deleteUserFromDB(long roomID, String jid) {
+		Connection con = null;
+        PreparedStatement pstmt = null;
+        try {
+            con = DbConnectionManager.getConnection();
+            pstmt = con.prepareStatement(DELETE_USER);
+            int i = 1;
+            pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, jid);
+            pstmt.executeUpdate();
+        }
+        catch (SQLException sqle) {
+            Log.error("Error delete user", sqle);
+        }
+        finally {
+            DbConnectionManager.closeConnection(pstmt, con);
+        }
+	}
+	
+	public static void deleteRoomFromDB(long roomID) {
+		Connection con = null;
+        PreparedStatement pstmt = null;
+        try {
+            con = DbConnectionManager.getConnection();
+            pstmt = con.prepareStatement(DELETE_ROOM);
+            int i = 1;
+            pstmt.setLong(i++, roomID);
+            pstmt.executeUpdate();
+        }
+        catch (SQLException sqle) {
+            Log.error("Error delete room", sqle);
         }
         finally {
             DbConnectionManager.closeConnection(pstmt, con);

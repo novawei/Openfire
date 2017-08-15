@@ -29,8 +29,12 @@ public class MUCExtendEventListener implements MUCEventListener {
 
 	@Override
 	public void roomDestroyed(JID roomJID) {
-		// TODO Auto-generated method stub
-
+		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService(roomJID).getChatRoom(roomJID.getNode());
+		if (mucroom == null) {
+			return;
+		}
+		long roomID = mucroom.getID();
+		MUCDao.deleteRoomFromDB(roomID);
 	}
 
 	@Override
