@@ -14,8 +14,8 @@ import org.slf4j.LoggerFactory;
 public class MUCDao {
 	private static final Logger Log = LoggerFactory.getLogger(MUCDao.class);
 
-	private static final String CHECK_USER_EXIST = "SELECT COUNT(*) FROM ofMucUser WHERE roomID=? AND jid=?";
-	
+	private static final String QUERY_USER = "SELECT u.roomID, u.jid, u.nickname FROM ofMucUser AS u "
+			+ "WHERE u.roomID=? AND u.jid=?";
 	private static final String ADD_USER = "INSERT INTO ofMucUser(roomID, jid, nickname) VALUES(?, ?, ?)";
 	private static final String UPDATE_USER = "UPDATE ofMucUser SET nickname=? WHERE roomID=? AND jid=?";
 	private static final String DELETE_USER = "DELETE FROM ofMucUser WHERE roomID=? AND jid=?";
@@ -28,27 +28,30 @@ public class MUCDao {
 			+ "LEFT JOIN ofmucaffiliation AS a ON a.roomID=u.roomID AND a.jid=u.jid "
 			+ "WHERE u.roomID=?";
 	
-	public static boolean isUserExist(long roomID, String jid) {
-		boolean exist = false;
+	public static UserEntity getUser(long roomID, String jid) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
+		UserEntity user = null;
 		try {
 			con = DbConnectionManager.getConnection();
-			pstmt = con.prepareStatement(CHECK_USER_EXIST);
+			pstmt = con.prepareStatement(QUERY_USER);
 			pstmt.setLong(1, roomID);
 			pstmt.setString(2, jid);
 			ResultSet rs = pstmt.executeQuery();
 			if (rs.next()) {
-				exist = rs.getBoolean(1);
+				user = new UserEntity();
+				int i = 2;
+				user.setJid(rs.getString(i++));
+				user.setNickname(rs.getString(i++));
 			}
 		} 
 		catch (SQLException sqle) {
-			Log.error("Error check user exist", sqle);
+			Log.error("Error get user", sqle);
 		}
 		finally {
             DbConnectionManager.closeConnection(pstmt, con);
         }
-		return exist;
+		return user;
 	}
 	
 	public static void saveUserToDB(long roomID, String jid, String nickname) {

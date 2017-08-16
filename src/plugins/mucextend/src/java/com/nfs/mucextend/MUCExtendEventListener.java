@@ -12,14 +12,10 @@ import org.jivesoftware.openfire.muc.MUCRole;
 import org.jivesoftware.openfire.muc.MUCRoom;
 import org.jivesoftware.openfire.session.ClientSession;
 import org.jivesoftware.openfire.user.UserNotFoundException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
 
 public class MUCExtendEventListener implements MUCEventListener {
-	
-	private static final Logger Log = LoggerFactory.getLogger(MUCExtendEventListener.class);
 
 	@Override
 	public void roomCreated(JID roomJID) {
@@ -45,7 +41,7 @@ public class MUCExtendEventListener implements MUCEventListener {
 		}
 		long roomID = mucroom.getID();
 		String jid = user.toBareJID();
-		if (MUCDao.isUserExist(roomID, jid)) {
+		if (MUCDao.getUser(roomID, jid) != null) {
 			return;
 		}
 		
