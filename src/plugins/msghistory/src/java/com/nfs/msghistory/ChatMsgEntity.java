@@ -3,11 +3,18 @@ package com.nfs.msghistory;
 import java.util.Date;
 
 public class ChatMsgEntity {
+	private long messageID;
 	private String sender;
 	private String receiver;
 	private String body;
 	private Date createdDate;
 	
+	public long getMessageID() {
+		return messageID;
+	}
+	public void setMessageID(long messageID) {
+		this.messageID = messageID;
+	}
 	public String getSender() {
 		return sender;
 	}

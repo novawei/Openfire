@@ -25,12 +25,7 @@ public class MUCExtendEventListener implements MUCEventListener {
 
 	@Override
 	public void roomDestroyed(JID roomJID) {
-		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService(roomJID).getChatRoom(roomJID.getNode());
-		if (mucroom == null) {
-			return;
-		}
-		long roomID = mucroom.getID();
-		MUCDao.deleteRoomFromDB(roomID);
+		MUCDao.deleteRoomFromDB(roomJID.getNode());
 	}
 
 	@Override
@@ -39,13 +34,12 @@ public class MUCExtendEventListener implements MUCEventListener {
 		if (mucroom == null) {
 			return;
 		}
-		long roomID = mucroom.getID();
 		String jid = user.toBareJID();
-		if (MUCDao.getUser(roomID, jid) != null) {
+		if (MUCDao.getUser(mucroom.getName(), jid) != null) {
 			return;
 		}
 		
-		MUCDao.saveUserToDB(roomID, jid, nickname);
+		MUCDao.saveUserToDB(mucroom.getID(), mucroom.getName(), jid, nickname);
 		// TODO 通知组内成员，成员列表变动
 	}
 
@@ -58,15 +52,7 @@ public class MUCExtendEventListener implements MUCEventListener {
 	@Override
 	public void nicknameChanged(JID roomJID, JID user, String oldNickname,
 			String newNickname) {
-		MUCRoom mucroom = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatService(roomJID).getChatRoom(roomJID.getNode());
-		if (mucroom == null) {
-			return;
-		}
-		long roomID = mucroom.getID();
-		String jid = user.toBareJID();
-		
-		MUCDao.updateUserToDB(roomID, jid, newNickname);
-		// TODO 通知组内成员，成员昵称变动
+		// 昵称通过IQ修改，消息发送以用户名为node，用户昵称应该通过客户端获取房间的用户列表之后，进行解析，减轻服务端的压力
 	}
 
 	@Override
@@ -79,13 +65,12 @@ public class MUCExtendEventListener implements MUCEventListener {
 		if (mucroom == null) {
 			return;
 		}
-		long roomID = mucroom.getID();
 		Collection<MUCRole> occupants = mucroom.getOccupants();
 		for (MUCRole role : occupants) {
 			role.getUserAddress().toBareJID();
 		}
 		// 获取所有的用户，然后给群组成员发送消息
-		List<UserEntity> userList = MUCDao.getUserList(roomID);
+		List<UserEntity> userList = MUCDao.getUserList(mucroom.getName());
 		/**
 		 * <message to="novawei@10.50.200.45/Spark" id="iJ0Vm-713" type="groupchat" from="test1@conference.10.50.200.45/novawei">
 		 * <body>22</body>

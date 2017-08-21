@@ -54,6 +54,7 @@ public class MsgHistoryIQHandler extends IQHandler {
 				JID jid = null;
 				for (ChatMsgEntity msg : msgList) {
 					msgElement = queryElement.addElement("message");
+					msgElement.addAttribute("id", String.valueOf(msg.getMessageID()));
 					jid = new JID(msg.getSender(), domain, null);
 					msgElement.addAttribute("from", jid.toBareJID());
 					jid = new JID(msg.getReceiver(), domain, null);
@@ -73,8 +74,8 @@ public class MsgHistoryIQHandler extends IQHandler {
 				List<MultiUserChatService> serviceList = XMPPServer.getInstance().getMultiUserChatManager().getMultiUserChatServices();
 				domain = (serviceList.size() > 0) ? serviceList.get(0).getServiceDomain() : "conference." + domain;
 				
-				long roomID = Long.valueOf(query.attributeValue("roomID"));
-				List<GroupChatMsgEntity> msgList = MsgHistoryDao.queryGroupChatMsg(roomID, pageNum, pageSize);
+				String roomName = query.attributeValue("roomName");
+				List<GroupChatMsgEntity> msgList = MsgHistoryDao.queryGroupChatMsg(roomName, pageNum, pageSize);
 				
 				Element element = reply.getElement();
 				Element queryElement = element.addElement("query", NAME_SPACE);
@@ -84,6 +85,7 @@ public class MsgHistoryIQHandler extends IQHandler {
 				JID jid = null;
 				for (GroupChatMsgEntity msg : msgList) {
 					msgElement = queryElement.addElement("message");
+					msgElement.addAttribute("id", String.valueOf(msg.getMessageID()));
 					jid = new JID(msg.getRoomName(), domain, msg.getNickname());
 					msgElement.addAttribute("from", jid.toFullJID());
 					msgElement.addAttribute("type", "groupchat");

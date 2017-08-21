@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class GroupChatMsgEntity {
 	//sender, roomID, roomName, createdDate, body, nickname
+	private long messageID;
 	private String sender;
 	private long roomID;
 	private String roomName;
@@ -11,6 +12,12 @@ public class GroupChatMsgEntity {
 	private String body;
 	private String nickname;
 	
+	public long getMessageID() {
+		return messageID;
+	}
+	public void setMessageID(long messageID) {
+		this.messageID = messageID;
+	}
 	public String getSender() {
 		return sender;
 	}

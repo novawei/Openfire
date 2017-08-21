@@ -10,6 +10,11 @@ import org.xmpp.packet.JID;
 import org.xmpp.packet.Packet;
 import org.xmpp.packet.Presence;
 
+/**
+ * 屏蔽，消息发送以用户名为node，用户昵称应该通过客户端获取房间的用户列表之后，进行解析，减轻服务端的压力
+ * @author Nova
+ *
+ */
 public class RoomPresenceInterceptor implements PacketInterceptor {
 
 	@Override
@@ -32,8 +37,7 @@ public class RoomPresenceInterceptor implements PacketInterceptor {
 					if (mucroom == null) {
 						return;
 					}
-					long roomID = mucroom.getID();
-					UserEntity user = MUCDao.getUser(roomID, packet.getFrom().toBareJID());
+					UserEntity user = MUCDao.getUser(roomName, packet.getFrom().toBareJID());
 					if (user == null) {
 						return;
 					}

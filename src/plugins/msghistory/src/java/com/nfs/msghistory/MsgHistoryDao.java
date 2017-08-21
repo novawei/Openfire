@@ -21,11 +21,11 @@ public class MsgHistoryDao {
 
 	private static final String ADD_CHAT_MSG = "INSERT INTO ofMsgHistoryChat(sender, receiver, createdDate, body) values(?, ?, ?, ?)";
 	private static final String ADD_GROUPCHAT_MSG = "INSERT INTO ofMsgHistoryGroupChat(sender, roomID, roomName, createdDate, body, nickname) values(?, ?, ?, ?, ?, ?)";
-	private static final String QUERY_CHAT_MSG = "SELECT sender, receiver, createdDate, body FROM ofMsgHistoryChat "
+	private static final String QUERY_CHAT_MSG = "SELECT messageID, sender, receiver, createdDate, body FROM ofMsgHistoryChat "
 			+ "WHERE (sender=? AND receiver=?) OR (sender=? AND receiver=?) "
 			+ "ORDER BY createdDate DESC LIMIT ?,?";
-	private static final String QUERY_GROUPCHAT_MSG = "SELECT sender, roomID, roomName, createdDate, body, nickname FROM ofMsgHistoryGroupChat "
-			+ "WHERE roomID=? "
+	private static final String QUERY_GROUPCHAT_MSG = "SELECT messageID, sender, roomID, roomName, createdDate, body, nickname FROM ofMsgHistoryGroupChat "
+			+ "WHERE roomName=? "
 			+ "ORDER BY createdDate DESC LIMIT ?,?";
 	
 	public static  void saveChatMsgToDB(Message msg) {
@@ -91,6 +91,7 @@ public class MsgHistoryDao {
 			while (rs.next()) {
 				msg = new ChatMsgEntity();
 				i = 1;
+				msg.setMessageID(rs.getLong(i++));
 				//sender, receiver, createdDate, body
 				msg.setSender(rs.getString(i++));
 				msg.setReceiver(rs.getString(i++));
@@ -108,7 +109,7 @@ public class MsgHistoryDao {
         return msgList;
 	}
 	
-	public static List<GroupChatMsgEntity> queryGroupChatMsg(long roomID, long pageNum, long pageSize) {
+	public static List<GroupChatMsgEntity> queryGroupChatMsg(String roomName, long pageNum, long pageSize) {
 		Connection con = null;
         PreparedStatement pstmt = null;
         GroupChatMsgEntity msg = null;
@@ -117,13 +118,14 @@ public class MsgHistoryDao {
             con = DbConnectionManager.getConnection();
             pstmt = con.prepareStatement(QUERY_GROUPCHAT_MSG);
             int i = 1;
-            pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, roomName);
             pstmt.setLong(i++, (pageNum-1)*pageSize);
             pstmt.setLong(i++, pageSize);
             ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
 				msg = new GroupChatMsgEntity();
 				i = 1;
+				msg.setMessageID(rs.getLong(i++));
 				//sender, roomID, roomName, createdDate, body, nickname
 				msg.setSender(rs.getString(i++));
 				msg.setRoomID(rs.getLong(i++));

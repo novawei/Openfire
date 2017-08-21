@@ -14,33 +14,32 @@ import org.slf4j.LoggerFactory;
 public class MUCDao {
 	private static final Logger Log = LoggerFactory.getLogger(MUCDao.class);
 
-	private static final String QUERY_USER = "SELECT u.roomID, u.jid, u.nickname FROM ofMucUser AS u "
-			+ "WHERE u.roomID=? AND u.jid=?";
-	private static final String ADD_USER = "INSERT INTO ofMucUser(roomID, jid, nickname) VALUES(?, ?, ?)";
-	private static final String UPDATE_USER = "UPDATE ofMucUser SET nickname=? WHERE roomID=? AND jid=?";
-	private static final String DELETE_USER = "DELETE FROM ofMucUser WHERE roomID=? AND jid=?";
-	private static final String DELETE_ROOM = "DELETE FROM ofMucUser WHERE roomID=?";
+	private static final String QUERY_USER = "SELECT u.roomID, u.roomName, u.jid, u.nickname FROM ofMucUser AS u "
+			+ "WHERE u.roomName=? AND u.jid=?";
+	private static final String ADD_USER = "INSERT INTO ofMucUser(roomID, roomName, jid, nickname) VALUES(?, ?, ?)";
+	private static final String UPDATE_USER = "UPDATE ofMucUser SET nickname=? WHERE roomName=? AND jid=?";
+	private static final String DELETE_USER = "DELETE FROM ofMucUser WHERE roomName=? AND jid=?";
+	private static final String DELETE_ROOM = "DELETE FROM ofMucUser WHERE roomName=?";
 	
-	private static final String QUERY_ROOM_LIST = "SELECT DISTINCT r.roomID, r.name, r.naturalName, r.description, u.nickname FROM ofMucRoom AS r "
-			+ "INNER JOIN ofMucUser AS u ON r.roomID=u.roomID "
+	private static final String QUERY_ROOM_LIST = "SELECT DISTINCT r.roomID, r.name, r.naturalName, r.description FROM ofMucRoom AS r "
 			+ "WHERE u.jid=?";
-	private static final String QUERY_USER_LIST = "SELECT u.roomID, u.jid, u.nickname, a.affiliation FROM ofMucUser AS u "
+	private static final String QUERY_USER_LIST = "SELECT u.roomID, u.roomName, u.jid, u.nickname, a.affiliation FROM ofMucUser AS u "
 			+ "LEFT JOIN ofmucaffiliation AS a ON a.roomID=u.roomID AND a.jid=u.jid "
-			+ "WHERE u.roomID=?";
+			+ "WHERE u.roomName=?";
 	
-	public static UserEntity getUser(long roomID, String jid) {
+	public static UserEntity getUser(String roomName, String jid) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		UserEntity user = null;
 		try {
 			con = DbConnectionManager.getConnection();
 			pstmt = con.prepareStatement(QUERY_USER);
-			pstmt.setLong(1, roomID);
+			pstmt.setString(1, roomName);
 			pstmt.setString(2, jid);
 			ResultSet rs = pstmt.executeQuery();
 			if (rs.next()) {
 				user = new UserEntity();
-				int i = 2;
+				int i = 3;
 				user.setJid(rs.getString(i++));
 				user.setNickname(rs.getString(i++));
 			}
@@ -54,7 +53,7 @@ public class MUCDao {
 		return user;
 	}
 	
-	public static void saveUserToDB(long roomID, String jid, String nickname) {
+	public static void saveUserToDB(long roomID, String roomName, String jid, String nickname) {
 		Connection con = null;
         PreparedStatement pstmt = null;
         try {
@@ -62,6 +61,7 @@ public class MUCDao {
             pstmt = con.prepareStatement(ADD_USER);
             int i = 1;
             pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, roomName);
             pstmt.setString(i++, jid);
             pstmt.setString(i++, nickname);
             pstmt.executeUpdate();
@@ -74,14 +74,14 @@ public class MUCDao {
         }
 	}
 	
-	public static void deleteUserFromDB(long roomID, String jid) {
+	public static void deleteUserFromDB(String roomName, String jid) {
 		Connection con = null;
         PreparedStatement pstmt = null;
         try {
             con = DbConnectionManager.getConnection();
             pstmt = con.prepareStatement(DELETE_USER);
             int i = 1;
-            pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, roomName);
             pstmt.setString(i++, jid);
             pstmt.executeUpdate();
         }
@@ -93,14 +93,14 @@ public class MUCDao {
         }
 	}
 	
-	public static void deleteRoomFromDB(long roomID) {
+	public static void deleteRoomFromDB(String roomName) {
 		Connection con = null;
         PreparedStatement pstmt = null;
         try {
             con = DbConnectionManager.getConnection();
             pstmt = con.prepareStatement(DELETE_ROOM);
             int i = 1;
-            pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, roomName);
             pstmt.executeUpdate();
         }
         catch (SQLException sqle) {
@@ -111,7 +111,7 @@ public class MUCDao {
         }
 	}
 	
-	public static void updateUserToDB(long roomID, String jid, String nickname) {
+	public static void updateUserToDB(String roomName, String jid, String nickname) {
 		Connection con = null;
         PreparedStatement pstmt = null;
         try {
@@ -119,7 +119,7 @@ public class MUCDao {
             pstmt = con.prepareStatement(UPDATE_USER);
             int i = 1;
             pstmt.setString(i++, nickname);
-            pstmt.setLong(i++, roomID);
+            pstmt.setString(i++, roomName);
             pstmt.setString(i++, jid);
             pstmt.executeUpdate();
         }
@@ -131,7 +131,7 @@ public class MUCDao {
         }
 	}
 	
-	public static List<UserEntity> getUserList(long roomID) {
+	public static List<UserEntity> getUserList(String roomName) {
 		List<UserEntity> userList = new ArrayList<UserEntity>();
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -139,11 +139,11 @@ public class MUCDao {
 		try {
 			con = DbConnectionManager.getConnection();
 			pstmt = con.prepareStatement(QUERY_USER_LIST);
-			pstmt.setLong(1, roomID);
+			pstmt.setString(1, roomName);
 			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
 				user = new UserEntity();
-				int i = 2;
+				int i = 3;
 				user.setJid(rs.getString(i++));
 				user.setNickname(rs.getString(i++));
 				user.setAffiliation(rs.getInt(i++));
@@ -176,7 +176,6 @@ public class MUCDao {
 				room.setName(rs.getString(i++));
 				room.setNaturalName(rs.getString(i++));
 				room.setDescription(rs.getString(i++));
-				room.setNickname(rs.getString(i++));
 				roomList.add(room);
 			}
 		} 
