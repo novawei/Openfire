@@ -23,10 +23,10 @@ public class MsgHistoryDao {
 	private static final String ADD_GROUPCHAT_MSG = "INSERT INTO ofMsgHistoryGroupChat(sender, roomID, roomName, createdDate, body, nickname) values(?, ?, ?, ?, ?, ?)";
 	private static final String QUERY_CHAT_MSG = "SELECT sender, receiver, createdDate, body FROM ofMsgHistoryChat "
 			+ "WHERE (sender=? AND receiver=?) OR (sender=? AND receiver=?) "
-			+ "ORDER BY createdDate ASC LIMIT ?,?";
+			+ "ORDER BY createdDate DESC LIMIT ?,?";
 	private static final String QUERY_GROUPCHAT_MSG = "SELECT sender, roomID, roomName, createdDate, body, nickname FROM ofMsgHistoryGroupChat "
 			+ "WHERE roomID=? "
-			+ "ORDER BY createdDate ASC LIMIT ?,?";
+			+ "ORDER BY createdDate DESC LIMIT ?,?";
 	
 	public static  void saveChatMsgToDB(Message msg) {
 		Connection con = null;
