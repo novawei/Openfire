@@ -23,7 +23,7 @@ public class IQHandlerUtils {
 	
 	public static List<IQHandler> buildHandlers() {
 		List<IQHandler> handlers = new ArrayList<IQHandler>();
-		// 处理用户房间列表
+		// 处理用户的房间列表
 		handlers.add(buildProcessor("room:list", new IQProcess() {
 			@Override
 			public IQ process(IQ packet) {
@@ -49,6 +49,7 @@ public class IQHandlerUtils {
 				return reply;
 			}
 		}));
+		// 处理房间的用户列表
 		handlers.add(buildProcessor("user:list", new IQProcess() {
 			@Override
 			public IQ process(IQ packet) {
@@ -78,6 +79,7 @@ public class IQHandlerUtils {
 				return reply;
 			}
 		}));
+		// 处理用户的信息查询和更新
 		handlers.add(buildProcessor("user:iq", new IQProcess() {
 			@Override
 			public IQ process(IQ packet) {
