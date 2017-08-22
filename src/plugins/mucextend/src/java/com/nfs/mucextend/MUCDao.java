@@ -22,9 +22,10 @@ public class MUCDao {
 	private static final String DELETE_ROOM = "DELETE FROM ofMucUser WHERE roomName=?";
 	
 	private static final String QUERY_ROOM_LIST = "SELECT DISTINCT r.roomID, r.name, r.naturalName, r.description FROM ofMucRoom AS r "
+			+ "INNER JOIN ofMucUser AS u ON r.name=u.roomName "
 			+ "WHERE u.jid=?";
 	private static final String QUERY_USER_LIST = "SELECT u.roomID, u.roomName, u.jid, u.nickname, a.affiliation FROM ofMucUser AS u "
-			+ "LEFT JOIN ofmucaffiliation AS a ON a.roomID=u.roomID AND a.jid=u.jid "
+			+ "LEFT JOIN ofMucAffiliation AS a ON a.roomID=u.roomID AND a.jid=u.jid "
 			+ "WHERE u.roomName=?";
 	
 	public static UserEntity getUser(String roomName, String jid) {
